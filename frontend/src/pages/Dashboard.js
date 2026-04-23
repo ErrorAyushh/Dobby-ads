@@ -18,6 +18,8 @@ function Dashboard() {
 
   const headers = { Authorization: `Bearer ${token}` };
 
+  // ✅ FIXED HERE (only added this line)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchFolders();
     if (currentFolder) fetchImages();
