@@ -1,6 +1,6 @@
 # PixNest — Cloud Image Storage
 
-A full-stack web application that allows users to register, create nested folders, and upload images — similar to Google Drive.
+A full-stack web application that allows users to register, create nested folders, and upload images  similar to Google Drive.
 
 Built as part of the Dobby Ads Full Stack Developer Assignment.
 
@@ -38,27 +38,49 @@ https://dobby-ads-khaki.vercel.app
 ## Project Structure
 dobby-ads/
 ├── backend/
+
 │   ├── models/
+
 │   │   ├── User.js
+
 │   │   ├── Folder.js
+
 │   │   └── Image.js
+
 │   ├── routes/
+
 │   │   ├── auth.js
+
 │   │   ├── folders.js
+
 │   │   └── images.js
+
 │   ├── middleware/
+
 │   │   └── auth.js
+
 │   └── server.js
+
 └── frontend/
+
 └── src/
+
 ├── pages/
+
 │   ├── Login.js
+
 │   ├── Signup.js
+
 │   └── Dashboard.js
+
 ├── components/
+
 │   ├── Navbar.js
+
 │   └── FolderItem.js
+
 └── context/
+
 └── AuthContext.js
 
 ## API Endpoints
