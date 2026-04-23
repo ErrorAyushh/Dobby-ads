@@ -22,8 +22,8 @@ app.use('/api/images', require('./routes/images'));
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('MongoDB Connected');
-    app.listen(process.env.PORT, () => {
-      console.log(`Server running on port ${process.env.PORT}`);
+    app.listen(process.env.PORT || 5000, () => {
+      console.log(`Server running on port ${process.env.PORT || 5000}`);
     });
   })
   .catch((err) => console.log(err));
